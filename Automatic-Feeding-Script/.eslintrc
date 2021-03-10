@@ -1,0 +1,35 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+    /* jsx
+        ecmaFeatures:{
+            jsx: true
+        }
+     */
+  },
+  /* 
+    settings:{
+        react:{
+    // Tells eslint-plugin-react to automatically detect the version of React to use
+            version:"detect"
+        }
+    }
+   */
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    /* 
+        "plugin:react/recommended" // Uses the recommended rules from @eslint-plugin-react
+       */
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescirpt-eslint",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {}
+}
+
+/* 
+    eslint-config-prettier Disables ESLint rules taht might conflict with prettier
+    eslint-plugin-prettier Runs prettier as an Eslint rule
+ */

@@ -1,0 +1,19 @@
+{
+  "apps": [
+    {
+      "name": "FRONT-Oracle",
+      "script": "./do.ts",
+      "watch": true,
+      "ignore_watch": ["node_modules"],
+      "error_file": "./logs/app-err.log",
+      "out_file": "./logs/app-out.log",
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "env_production": {
+        "NODE_ENV": "production"
+      },
+      "interpreter": "ts-node"
+    }
+  ]
+}

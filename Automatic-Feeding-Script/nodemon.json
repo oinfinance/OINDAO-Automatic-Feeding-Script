@@ -1,0 +1,10 @@
+{
+  "vberbose": true,
+  "ignore": ["**/*.test.js", "**/*.spec.ts", ".git", "node_modules"],
+  "watch": ["src"],
+  "ext": "ts",
+  "execMap": {
+    "rb": "ruby",
+    "pde": "processing --sketch={{pwd}} --run"
+  }
+}
